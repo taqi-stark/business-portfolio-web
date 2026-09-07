@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="120" fill="#0a0a1a" />
+  <rect width="512" height="512" rx="120" fill="transparent" stroke="#8b5cf6" stroke-width="20"/>
+  <text x="256" y="290" font-family="monospace" font-weight="900" font-size="240" fill="#8b5cf6" text-anchor="middle" dominant-baseline="middle">AT</text>
+</svg>
