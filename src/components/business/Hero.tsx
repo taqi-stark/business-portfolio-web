@@ -1,6 +1,6 @@
-import { ArrowRight, CheckCircle2, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, MessageCircle, Sparkles } from "lucide-react";
 import { businessData } from "@/content/business";
-import { HeroMockupComposite } from "../mockups/HeroMockupComposite";
+import { HeroSlideshow } from "./HeroSlideshow";
 
 export const Hero = () => {
   const getWhatsAppUrl = () => {
@@ -49,10 +49,10 @@ export const Hero = () => {
             </a>
 
             <a
-              href="#work"
+              href="#projects"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-100/80 text-slate-800 px-6 py-3.5 text-sm font-bold transition-all shadow-sm hover:border-slate-400"
             >
-              <span>{businessData.hero.ctaSecondary}</span>
+              <span>Explore Projects</span>
               <ArrowRight className="h-4 w-4 text-slate-500" />
             </a>
           </div>
@@ -68,10 +68,8 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Large Mockup Showcase */}
-        <div className="mt-12 sm:mt-16">
-          <HeroMockupComposite />
-        </div>
+        {/* Hero Interactive Slideshow Showcase */}
+        <HeroSlideshow />
       </div>
     </section>
   );

@@ -1,15 +1,7 @@
 import { Navbar } from "@/components/business/Navbar";
 import { Hero } from "@/components/business/Hero";
-import { Services } from "@/components/business/Services";
-import { ProblemSolution } from "@/components/business/ProblemSolution";
-import { PortfolioSection } from "@/components/business/PortfolioSection";
-import { IndustrySolutions } from "@/components/business/IndustrySolutions";
-import { WhyWorkWithMe } from "@/components/business/WhyWorkWithMe";
-import { Process } from "@/components/business/Process";
-import { Packages } from "@/components/business/Packages";
-import { AboutAli } from "@/components/business/AboutAli";
-import { FAQSection } from "@/components/business/FAQSection";
-import { FinalCTA } from "@/components/business/FinalCTA";
+import { ProjectsShowcase } from "@/components/business/ProjectsShowcase";
+import { ServicesPricing } from "@/components/business/ServicesPricing";
 import { ContactSection } from "@/components/business/ContactSection";
 import { Footer } from "@/components/business/Footer";
 import { WhatsAppFloating } from "@/components/business/WhatsAppFloating";
@@ -21,16 +13,8 @@ export const Home = () => {
       <Navbar />
       <main id="main-content">
         <Hero />
-        <Services />
-        <ProblemSolution />
-        <PortfolioSection />
-        <IndustrySolutions />
-        <WhyWorkWithMe />
-        <Process />
-        <Packages />
-        <AboutAli />
-        <FAQSection />
-        <FinalCTA />
+        <ProjectsShowcase />
+        <ServicesPricing />
         <ContactSection />
       </main>
       <Footer />

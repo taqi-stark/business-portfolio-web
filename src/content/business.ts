@@ -7,6 +7,21 @@ export interface ServiceItem {
   icon: string;
 }
 
+export interface UnifiedSolutionItem {
+  id: string;
+  title: string;
+  badge?: string;
+  priceStarting: string;
+  priceNote?: string;
+  timeline: string;
+  popular?: boolean;
+  shortDescription: string;
+  idealFor: string;
+  deliverables: string[];
+  icon: string;
+  industryTags: string[];
+}
+
 export interface ProblemSolutionItem {
   problem: string;
   solution: string;
@@ -80,6 +95,94 @@ export const businessData = {
       "Ongoing support after project launch",
     ],
   },
+
+  unifiedSolutions: [
+    {
+      id: "business-websites",
+      title: "Business Websites & Property Portals",
+      badge: "High Conversion",
+      priceStarting: "PKR 35,000",
+      timeline: "7 to 10 Days",
+      popular: true,
+      shortDescription:
+        "Professional, mobile-friendly websites that make your business easy to find on Google, build buyer trust, and route instant inquiries directly to your WhatsApp.",
+      idealFor: "Real Estate Agencies, Clinics, Offices, Schools & Service Providers",
+      deliverables: [
+        "Mobile-first design optimized for fast 4G loading",
+        "Google Maps & local business profile SEO",
+        "1-click WhatsApp inquiry buttons per listing/service",
+        "Domain, SSL & high-speed hosting setup",
+        "Simple admin panel to update content in minutes",
+        "1 month free post-launch support",
+      ],
+      icon: "Globe",
+      industryTags: ["Real Estate", "Clinics", "Offices", "Schools"],
+    },
+    {
+      id: "pos-inventory",
+      title: "Retail POS & Smart Inventory Systems",
+      badge: "Best for Marts",
+      priceStarting: "PKR 55,000",
+      timeline: "2 to 3 Weeks",
+      popular: true,
+      shortDescription:
+        "Fast barcode cashier billing, thermal receipt printing, automated stock alerts, and instant daily profit reports — stopping paperwork errors and cash loss.",
+      idealFor: "Retail Shops, Marts, Outlets, Pharmacies & Restaurants",
+      deliverables: [
+        "Sub-2-second barcode cashier checkout counter",
+        "Automated stock deduction & low-stock alerts",
+        "Thermal slip printer integration (80mm / 58mm)",
+        "Daily, weekly, and monthly profit & ledger analytics",
+        "Customer credit (Khata) ledger & balance tracking",
+        "On-site / remote staff training until 100% confident",
+      ],
+      icon: "Receipt",
+      industryTags: ["Retail & Marts", "Pharmacies", "Restaurants", "Wholesale"],
+    },
+    {
+      id: "ecommerce-store",
+      title: "E-Commerce Stores & WhatsApp Orders",
+      badge: "Online Sales",
+      priceStarting: "PKR 48,000",
+      timeline: "10 to 14 Days",
+      popular: false,
+      shortDescription:
+        "Clean, attractive online stores for businesses that want to sell products online with WhatsApp ordering, cash-on-delivery (COD), and bank transfer.",
+      idealFor: "Clothing Brands, Grocery Outlets, Electronics & Local Sellers",
+      deliverables: [
+        "Product catalog with categories, search & filters",
+        "Instant WhatsApp order generation with product details",
+        "Cash-on-Delivery (COD) & Bank Transfer checkout pipeline",
+        "Mobile shopping optimized for fast mobile data",
+        "Product upload walkthrough & staff training",
+        "Customer order notification alerts",
+      ],
+      icon: "ShoppingBag",
+      industryTags: ["Clothing & Boutiques", "Electronics", "Groceries"],
+    },
+    {
+      id: "custom-software",
+      title: "Custom Software & Booking Systems",
+      badge: "Tailored Architecture",
+      priceStarting: "Custom Quotation",
+      priceNote: "Based on your exact scope",
+      timeline: "Tailored to Scope",
+      popular: false,
+      shortDescription:
+        "Tailor-made internal business software, booking calendars, and customer balance tracking built specifically around your team's existing workflow.",
+      idealFor: "Clinics, Salons, Distribution Companies & Growing Businesses",
+      deliverables: [
+        "Built specifically around your team's day-to-day routine",
+        "Online slot booking & automated WhatsApp reminders",
+        "Multi-user roles with secure owner permissions",
+        "Automated PDF reports & accounting exports",
+        "Lifetime ownership with zero monthly SaaS lock-in fees",
+        "Long-term maintenance and upgrade roadmap",
+      ],
+      icon: "Cpu",
+      industryTags: ["Clinics & Salons", "Distributors", "Academies", "Gyms"],
+    },
+  ] as UnifiedSolutionItem[],
 
   services: [
     {
@@ -404,38 +507,31 @@ export const businessData = {
   process: [
     {
       step: "01",
-      title: "Discover",
+      title: "Discover & Strategy",
       description:
-        "We discuss your business, what problems you're facing, what your competitors do, and what exact outcome you want.",
-      highlight: "Simple conversation — no tech talk",
+        "We discuss your daily workflow, what bottlenecks slow you down, and what outcome you need. Simple, friendly conversation — zero technical jargon.",
+      highlight: "No tech jargon needed",
     },
     {
       step: "02",
-      title: "Plan",
+      title: "Blueprint & Upfront Quote",
       description:
-        "I map out the exact structure, screens, and features needed to solve your problem in the simplest way possible.",
-      highlight: "Clear blueprint & timeline",
+        "I map out the exact screens, features, and timeline needed to solve your problem with a transparent upfront quote — no surprise costs.",
+      highlight: "Clear scope & fixed price",
     },
     {
       step: "03",
-      title: "Build",
+      title: "Build & Interactive Preview",
       description:
-        "I develop the website or software, testing every button, form, and screen so that it works seamlessly.",
-      highlight: "Transparent progress updates",
+        "I develop the website or software and share live preview links so you can click around and verify everything as it takes shape.",
+      highlight: "Milestone demos & updates",
     },
     {
       step: "04",
-      title: "Test & Train",
+      title: "Launch & Staff Training",
       description:
-        "You and your team test the solution. I walk you through how to use everything until you feel 100% confident.",
-      highlight: "Hands-on staff training",
-    },
-    {
-      step: "05",
-      title: "Launch & Support",
-      description:
-        "We go live. I ensure your Google listing, WhatsApp links, and systems are running smoothly with ongoing support.",
-      highlight: "Reliable post-launch backing",
+        "We go live. I personally train you and your team step-by-step and provide dedicated post-launch support for total peace of mind.",
+      highlight: "Hands-on staff training included",
     },
   ],
 
@@ -506,34 +602,29 @@ export const businessData = {
 
   faqs: [
     {
-      question: "How much does a website or software typically cost?",
+      question: "How do milestone payments work?",
       answer:
-        "Costs depend on your requirements. A professional business website starts from PKR 35,000, while custom billing or POS systems typically start from PKR 55,000. During our free consultation, I'll recommend the most budget-effective solution for your goals with an exact upfront quote—no hidden fees.",
+        "To keep everything safe and transparent, projects are divided into milestone stages: a standard advance deposit to initiate work, milestone progress reviews, and final payment upon your complete satisfaction after staff training.",
     },
     {
       question: "Do I or my staff need technical knowledge to use this?",
       answer:
-        "Not at all. Everything I build is designed for non-technical users. If you and your staff can use WhatsApp or browse a mobile phone, you can comfortably operate the websites and software I deliver. I also provide clear video guides and personal training.",
+        "Not at all. Everything I build is designed for non-technical users. If you and your staff can use WhatsApp or browse a mobile phone, you can comfortably operate the websites and software I deliver. I also provide personal training and recorded video walkthroughs.",
     },
     {
-      question: "Can you build software specifically customized for my shop or office?",
+      question: "Can customer inquiries and orders connect directly to WhatsApp?",
       answer:
-        "Yes, absolutely. Unlike off-the-shelf software with hundreds of useless features, custom software is tailored specifically to your daily workflow, your terminology, and your team's exact habits.",
+        "Yes, absolutely. WhatsApp is the primary communication channel in Pakistan. Every website and system I build features automated WhatsApp routing so customer inquiries, property leads, or order summaries arrive directly in your WhatsApp inbox with all details pre-filled.",
     },
     {
-      question: "Can you integrate WhatsApp for orders and customer inquiries?",
+      question: "Can you build software customized specifically for my unique shop or office?",
       answer:
-        "Yes! WhatsApp is the primary communication channel in Pakistan. Every website and system I build features automated WhatsApp integration so customer inquiries, property leads, or order summaries arrive directly in your WhatsApp inbox with all details pre-filled.",
+        "Yes! Unlike off-the-shelf software filled with confusing, useless menus, custom software is engineered around your team's specific daily workflow, terminology, and habits.",
     },
     {
-      question: "What happens after the website or software is launched?",
+      question: "What happens after the project launches?",
       answer:
-        "I provide free support after launch to ensure everything runs smoothly. After that, I offer flexible monthly or as-needed maintenance for updates, security backups, adding new products, or expanding features as your business grows.",
-    },
-    {
-      question: "How long does it take from start to finish?",
-      answer:
-        "A standard business website takes roughly 7 to 10 days. An e-commerce store takes around 10 to 14 days, and a custom POS or business system takes 2 to 3 weeks depending on the complexity of your workflow.",
+        "I provide free support after launch to ensure smooth operation. After that, I provide flexible ongoing support for updates, security backups, adding new features, or expanding as your business grows.",
     },
   ] as FAQItem[],
 };

@@ -3,14 +3,8 @@ import { MessageCircle, Menu, X, PhoneCall, Sparkles } from "lucide-react";
 import { businessData } from "@/content/business";
 
 const NAV_LINKS = [
-  { label: "Home", href: "/#top" },
-  { label: "Services", href: "/#services" },
-  { label: "Solutions", href: "/#solutions" },
-  { label: "Work", href: "/#work" },
-  { label: "Process", href: "/#process" },
-  { label: "Packages", href: "/#packages" },
-  { label: "About", href: "/#about" },
-  { label: "FAQ", href: "/#faq" },
+  { label: "Live Projects", href: "/#projects" },
+  { label: "Services & Pricing", href: "/#services" },
   { label: "Contact", href: "/#contact" },
 ];
 

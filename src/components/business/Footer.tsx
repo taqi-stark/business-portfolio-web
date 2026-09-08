@@ -52,14 +52,10 @@ export const Footer = () => {
               Navigation
             </h4>
             <ul className="space-y-2">
-              <li><a href="/#top" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="/#work" className="hover:text-white transition-colors">Client Work & Case Studies</a></li>
-              <li><a href="/#solutions" className="hover:text-white transition-colors">Industry Breakdown</a></li>
-              <li><a href="/#process" className="hover:text-white transition-colors">How The Process Works</a></li>
-              <li><a href="/#packages" className="hover:text-white transition-colors">Packages & Pricing</a></li>
-              <li><a href="/#about" className="hover:text-white transition-colors">About Ali</a></li>
-              <li><a href="/#faq" className="hover:text-white transition-colors">FAQ</a></li>
-              <li><a href="/#contact" className="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/#top" className="hover:text-white transition-colors">Back to Top</a></li>
+              <li><a href="/#projects" className="hover:text-white transition-colors">Live Published Projects</a></li>
+              <li><a href="/#services" className="hover:text-white transition-colors">Services & Pricing</a></li>
+              <li><a href="/#contact" className="hover:text-white transition-colors">Contact & Consultation</a></li>
             </ul>
           </div>
         </div>

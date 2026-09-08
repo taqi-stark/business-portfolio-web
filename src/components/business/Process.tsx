@@ -17,8 +17,8 @@ export const Process = () => {
           </p>
         </div>
 
-        {/* 5-Step Process Timeline */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+        {/* 4-Step Process Timeline */}
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 relative">
           {businessData.process.map((step, idx) => (
             <div
               key={step.step}
